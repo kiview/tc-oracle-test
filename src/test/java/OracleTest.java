@@ -5,7 +5,15 @@ public class OracleTest {
 
     @Test
     void startContainerWorks() {
-        try (OracleContainer oc = new OracleContainer("gvenzl/oracle-xe")) {
+
+        String oracleImage = "gvenzl/oracle-xe";
+        String password = "foobar";
+
+        try (
+                OracleContainer oc = new OracleContainer(oracleImage)
+                .withPassword(password)
+                .withEnv("ORACLE_PASSWORD", password)
+        ) {
             oc.start();
         }
     }
