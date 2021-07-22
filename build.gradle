@@ -15,7 +15,7 @@ dependencies {
     runtimeOnly 'ch.qos.logback:logback-classic:1.2.4'
 
     testRuntimeOnly 'com.oracle.ojdbc:ojdbc8:19.3.0.0'
-    testImplementation 'org.testcontainers:oracle-xe:1.16.0'
+    testImplementation 'org.testcontainers:oracle-xe:1.15.3'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
