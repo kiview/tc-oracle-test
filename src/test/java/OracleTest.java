@@ -10,9 +10,11 @@ public class OracleTest {
         String password = "foobar";
 
         try (
-                OracleContainer oc = new OracleContainer(oracleImage)
-                .withPassword(password)
-                .withEnv("ORACLE_PASSWORD", password)
+//                OracleContainer oc = new OracleContainer(oracleImage)
+//                .withPassword(password)
+//                .withEnv("ORACLE_PASSWORD", password)
+                OracleContainer oc = new OracleContainer("oracleinanutshell/oracle-xe-11g")
+                .withEnv("ORACLE_ALLOW_REMOTE", "true")
         ) {
             oc.start();
         }
