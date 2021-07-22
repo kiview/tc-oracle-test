@@ -17,7 +17,7 @@ dependencies {
 
     testRuntimeOnly 'com.oracle.ojdbc:ojdbc8:19.3.0.0'
 //    testImplementation 'org.testcontainers:oracle-xe:1.16.0'
-    testImplementation 'com.github.testcontainers:testcontainers-java:137b00d'
+    testImplementation 'com.github.testcontainers:testcontainers-java:3858aff'
 
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
