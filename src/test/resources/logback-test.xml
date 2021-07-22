@@ -5,10 +5,10 @@
         </encoder>
     </appender>
 
-    <root level="info">
+    <root level="DEBUG">
         <appender-ref ref="STDOUT"/>
     </root>
 
     <logger name="org.testcontainers" level="DEBUG"/>
-    <logger name="com.github.dockerjava" level="INFO"/>
+    <logger name="com.github.dockerjava" level="DEBUG"/>
 </configuration>
