@@ -14,7 +14,6 @@ public class OracleTest {
 //                .withPassword(password)
 //                .withEnv("ORACLE_PASSWORD", password)
                 OracleContainer oc = new OracleContainer("oracleinanutshell/oracle-xe-11g")
-                .withEnv("ORACLE_ALLOW_REMOTE", "true")
         ) {
             oc.start();
         }
