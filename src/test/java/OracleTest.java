@@ -5,7 +5,7 @@ public class OracleTest {
 
     @Test
     void startContainerWorks() {
-        try (OracleContainer oc = new OracleContainer("oracleinanutshell/oracle-xe-11g:1.0.0")) {
+        try (OracleContainer oc = new OracleContainer("gvenzl/oracle-xe")) {
             oc.start();
         }
     }
